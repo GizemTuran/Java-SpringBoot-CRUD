@@ -1,0 +1,3 @@
+7.sorunun cevabı:
+
+http://example/solr/collection1/select?q=updatedAt:[2020-01-01T00:00:00Z TO *]&wt=json&indent=true
