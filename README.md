@@ -45,7 +45,3 @@
 - Java compiler
 - PostgreSQL
 - enocachallenge isimli PostgreSQL üzerinde bir database
-
-
-
-
