@@ -52,10 +52,11 @@ public class CompanyServiceImpl implements CompanyService{
     }
 
     @Override
-    public void removeCompany(long id) throws ResourceNotFound {
+    public String removeCompany(long id) throws ResourceNotFound {
         Company company =companyRepository.findById(id)
                 .orElseThrow(() -> new ResourceNotFound("There is no such resource."));
 
         companyRepository.delete(company);
+        return "Deleted successfully.";
     }
 }

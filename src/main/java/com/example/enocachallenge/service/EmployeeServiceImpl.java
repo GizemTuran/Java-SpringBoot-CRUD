@@ -57,10 +57,11 @@ public class EmployeeServiceImpl implements EmployeeService{
         return modelMapper.map(updatedEmployee,EmployeeDto.class);
     }
     @Override
-    public void removeEmployee(long id) throws ResourceNotFound {
+    public String removeEmployee(long id) throws ResourceNotFound {
         Employee employee =employeeRepository.findById(id)
                 .orElseThrow(() -> new ResourceNotFound("There is no such resource."));
 
         employeeRepository.delete(employee);
+        return "Deleted successfully.";
     }
 }

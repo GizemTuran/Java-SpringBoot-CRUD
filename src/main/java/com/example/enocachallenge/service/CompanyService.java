@@ -12,5 +12,5 @@ public interface CompanyService {
     Company findById(long id);
     CompanyDto addCompany(CompanyDto companyDto);
     CompanyDto updateCompany(CompanyDto companyDto, long id) throws ResourceNotFound;
-    void removeCompany(long id) throws ResourceNotFound;
+    String removeCompany(long id) throws ResourceNotFound;
 }

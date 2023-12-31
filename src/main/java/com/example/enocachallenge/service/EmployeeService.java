@@ -12,6 +12,6 @@ public interface EmployeeService {
     Employee findById(long id);
     EmployeeDto addEmployee(EmployeeDto employeeDto);
     EmployeeDto updateEmployee(EmployeeDto employeeDto, Long id) throws ResourceNotFound;
-    void removeEmployee(long id) throws ResourceNotFound;
+    String removeEmployee(long id) throws ResourceNotFound;
 
 }

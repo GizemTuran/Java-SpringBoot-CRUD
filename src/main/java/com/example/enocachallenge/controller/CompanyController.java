@@ -18,10 +18,16 @@ public class CompanyController {
         this.companyService=companyService;
     }
 
-    @GetMapping("/find/{id}")
+    @GetMapping("/find/all")
     public List<Company> findAll(){
         return companyService.findAll();
     }
+
+    @GetMapping("/find/{id}")
+    public Company findById(@PathVariable("id")int id){
+        return companyService.findById(id);
+    }
+
     @PostMapping("/add")
     public CompanyDto addCompany(@RequestBody CompanyDto companyDto){
         return companyService.addCompany(companyDto);
@@ -31,7 +37,7 @@ public class CompanyController {
         return companyService.updateCompany(companyDto,id);
     }
     @DeleteMapping("/delete/{id}")
-    public void removeCompany(@PathVariable("id")int id) throws ResourceNotFound {
-        companyService.removeCompany(id);
+    public String removeCompany(@PathVariable("id")int id) throws ResourceNotFound {
+        return companyService.removeCompany(id);
     }
 }
