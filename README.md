@@ -40,6 +40,12 @@
 #### Employee Silme
 ![deleteemployee](https://github.com/GizemTuran/Java-SpringBoot-CRUD/assets/78648500/fc46ff42-116d-4865-a838-7e53e222aed0)
 
+## Gereksinimler
+- Java version 19
+- Java compiler
+- PostgreSQL
+- enocachallenge isimli PostgreSQL üzerinde bir database
+
 
 
 
