@@ -9,3 +9,6 @@
 
 ### Employee HTTP methodları ve Endpoinleri
 ![employeehttpmethodları](https://github.com/GizemTuran/Java-SpringBoot-CRUD/assets/78648500/03177348-3a4e-4957-9f8d-61fb2dc449a2)
+
+### Company HTTP methodları ve Endpoinleri
+![companyhttpmethodlar](https://github.com/GizemTuran/Java-SpringBoot-CRUD/assets/78648500/c411b24c-9eb4-4b13-a308-429388bb935e)
